@@ -24,6 +24,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    width: 1050px;
+    margin: 0 auto;
 	line-height: 1;
 }
 ol, ul {
@@ -43,12 +45,12 @@ table {
 }
 
 /*시작*/
-
 div,section{
     box-sizing: border-box;
 }
 /* [head]회원가입 | 로그인| */
 .header_inform{
+    width: 1050px;
     height: 37px;
     position: relative;
 }
@@ -92,6 +94,7 @@ div,section{
     flex-direction: row;
     position: relative;;
     height: 63px;
+    width: 1050px;
 }
 .header_search .left{
     align-items: center;
@@ -104,7 +107,6 @@ div,section{
     height: 42px;
 }
 .left div{
-    border: none;
     width: 1px;
     height: 14px;
     margin: 0px 12px;
@@ -154,41 +156,74 @@ div,section{
     position: absolute;
     width: 148px;
     height: 36px;
-    right: 9px;
+    right: 0px;
 }
 .service img{
     margin:0px 20px 0px 0px;
 }
 /*[head] 카테고리 부분*/
 .header_list{
+    width: 1050px;
     height: 56px;
     display: flex;
     position: relative;
 }
-.header_list > .category{
+.header_list .category{
+    position: relative;
     width: 15%;
     height: 100%;
 }
-.header_list > .list{
+.category img{
+    position: relative;
+    bottom: -20px;
+}
+.category span{
+    position: relative;
+    left: 10px;
+    bottom: -20px;
+}
+.header_list .list{
     display: flex;
-    border: 1px solid black;
     width: 600px;
     height: 56px;
     position: absolute;
     left: 20%;
 }
-.header_list > .deliver{
+.list li{
+    width: 150px;
+    height: 55px;
+    padding:18px 0px 0px;
+    line-height: 20px;
+    text-align: center;
+}
+.header_list .deliver{
     width: 15%;
     height: 100%;
     position: absolute;
-    right:0;
+    right:-30px;
+}
+.deliver a{
+    position: relative;
+    bottom: -20px;
+    width: 130.76px;
+    height: 32px;
+    padding: 6px 16px;
+    font-size: 13px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 20px;
+}
+.deliver a span{
+    font-weight: 550;
+    word-spacing: -0.6px;
 }
 .home_image{
+    width: 1050px;
     height: 370px;
     margin:0px auto 40px;
 }
 /*main 시작*/
 .section01{
+    width: 1050px;
     margin: 0px auto;
     padding: 40px 0px;
     height: 590.26px;
@@ -197,6 +232,13 @@ div,section{
 .section01 .caption01{
     margin: 0px 0px 27px;
     height: 48.2px;
+    text-align: center;
+}
+.caption01 span{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.26px;
 }
 .section01 .list{
     display: flex;
@@ -246,13 +288,39 @@ div,section{
     margin: 14px 10px 0px 0px;
 }
 .li .name{
+    line-height: 1.45;
     width: 239px;
     height: 46.4px;
     margin: 0px 0px 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.li .percent{
+    width: 34.25px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 7px 0px 0px;
+    color: #FA622F;
+}
+.li .salePrice{
+    width: 80.1px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.li .originPrice{
+    width: 121.35px;
+    height: 20.67px;
+    font-size: 14px;
+    margin: 2px 0px 0px;
+    color: #b5b5b5;
+    text-decoration: line-through;
 }
 .li .price{
     width: 239px;
     height: 24px;
+    margin: 0px 0px 8px;
 }
 /*광고배너*/
 .ad{
@@ -264,4 +332,255 @@ div,section{
 .ad img{
     width: 100%;
     height: 140px;
+}
+/*추석 특가*/
+.chuseok{
+    width: 1050px;
+    height: 607.51px;
+    margin: 0px -37px 0px 0px;
+    padding: 80px 0px;
+    display: flex;
+    gap:107px;
+}
+.chuseok .countdown{
+    width: 249px;
+}
+.countdown h2{
+    height: 30.79px;
+    font-size: 28px;
+    margin: 0px 0px 10px;
+}
+.countdown h3{
+    height: 20.79px;
+    font-size: 16px;
+    margin: 0px 0px 24px;
+    color: #999999;
+}
+.countdown .timer{
+    height: 47px;
+}
+.countdown p{
+    height: 20.01px;
+    font-size: 14px;
+    margin: 32px 0px 0px;
+    color: #cccccc;
+}
+.chuseok .item{
+    width: 694px;
+    height: 447.51px;
+}
+.item .img{
+    width: 100%;
+    height: 347px;
+}
+.item .main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img div{
+    position: absolute;
+    z-index: 2;
+    background-color: #BD76FF;
+    width: 67.52px;
+    height: 32px;
+    padding: 0px 8px;
+    text-align: center;
+    border: none;
+    white-space: nowrap;
+}
+.img span{
+    position: relative;
+    bottom: -6px;
+    left: -2px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.43px;
+}
+
+.item .tag{
+    height: 100.51px;
+    padding: 14px 0px 0px;
+}
+.name small{
+    display: block;
+    height: 19.31px;
+    font-size: 14px;
+    margin: 0px 0px 8px;
+    color: #999999;
+}
+.name h3{
+    height: 23.2px;
+    font-size: 16px;
+    margin: 0px 0px 6px;
+}
+.tag .price{
+    height: 30px;
+}
+.price .percent{
+    width: 42.81px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 7px 0px 0px;
+    color: #FA622F;   
+}
+.price .salePrice{
+    width: 76.56px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.price .originPrice{
+    width: 50.99px;
+    height: 20.67px;
+    font-size: 14px;
+    margin: 2px 0px 0px 6px;
+    color: #b5b5b5;
+    text-decoration: line-through;
+}
+/*인스타그램*/
+.instagram{
+    margin: 0px -37.3333px 0px 0px;
+    padding: 40px 0px;
+}
+.instagram .title{
+    text-align: center;
+    margin: 0px 0px 27px;
+}
+.title h1{
+    font-size: 28px;
+    font-weight: 700px;
+    padding: 8px 0px 8px 8px;
+}
+.title p{
+    font-size: 16px;
+    color: #999999;
+    margin: 2px 0px 0px;
+}
+.instagram .image{
+    display: flex;
+}
+.insta{
+    width: 175px;
+    height: 175px;
+}
+.more{
+    text-align: center;
+    margin: 40px 0px 0px;
+}
+.more p{
+    font-size: 16px;
+    color: #999999;
+    font-weight: 400px;
+    height: 30.04px;
+}
+.more a{
+    font-size: 16px;
+    height: 30.04px;
+    font-weight: 500px;
+}
+/*footer*/
+footer{
+    height: 504px;
+}
+.footer01{
+    height: 401px;
+}
+.footer02{
+    height: 322px;
+    display: flex;
+    margin: 0px 0px 24px;
+}
+.footer03{
+    float: left;
+    width: 534px;
+    height: 298px;
+}
+.footer03 h2{
+    padding: 29px 0px 6px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+}
+.footer03 h3{
+    width: 156px;
+    height: 44px;
+}
+.footer03 div{
+    display: flex;
+    padding-top: 16px;
+    width: 534px;
+    height: 60px;
+}
+.f031 span{
+    display: block;
+    width: 140px;
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+footer dl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 22px;
+}
+footer dd{
+    color: rgb(153, 153, 153);
+}
+.footer04{
+    padding-top: 29px;
+    height: 298px;
+    width: 476.45px;
+    line-height: 20px;
+    color: rgb(153, 153, 153);
+}
+.footer05{
+    display: flex;
+    height: 79px;
+    padding: 20px 0px 24px;
+    border-top: 1px solid rgb(238, 238, 238);
+    letter-spacing: 0px;
+}
+.footer05 a{
+    display: flex;
+    width: 267px;
+}
+.f051 img,.f052 img{
+    height: 34px;
+    width: 34px;
+    margin: 0px 10px 0px 0px;
+}
+.f053 img{
+    height: 34px;
+    width: 102px;
+    margin: 0px 10px 0px 0px;
+}
+.footer05 p{
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+    padding-top: 1px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+.footer06{
+    height: 103px;
+    padding: 19px 0px 27px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.footer06 p{
+    font-size: 10px;
+    line-height: 16px;
+    color: rgb(153, 153, 153);
+    letter-spacing: -0.5px;
 }
