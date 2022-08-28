@@ -1,16 +1,23 @@
 import './App.css';
+import logo from './image/kurly_img.png';
+import insta_01 from './image/instagram_img01.jpg';
+import insta_02 from './image/instagram_img02.jpg';
+import insta_03 from './image/instagram_img03.jpg';
+import insta_04 from './image/instagram_img04.jpg';
+import insta_05 from './image/instagram_img05.jpg';
+import insta_06 from './image/instagram_img06.jpg';
 
-function Header(){
+export function Header(){
   return<div class="header_inform">
     <div class="login">
       <a class="purple">회원가입</a> <div></div>  <a>로그인</a> <div></div> <a>고객센터<img src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
     </div>
   </div>
 }
-function Search(){
+export function Search(){
   return<div class="header_search">
     <div class="left">
-      <img src="image/kurly_img.png"/>
+      <img src={logo} alt='마켓컬리'/>
       <button class="purple" type="menu">마켓컬리</button>
       <div></div>
       <button type="menu" class="gray">뷰티컬리</button>
@@ -27,7 +34,7 @@ function Search(){
   </div>
 
 }
-function Nav(){
+export function Nav(){
   return<div class = "header_list">
     <div class="category">
       <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg=="/>
@@ -118,7 +125,7 @@ function Goods1(){
                   <h3>[선물세트]그래놀라가 들어간 담백견과 4종세트 1호</h3>
               </div>
               <div class="price">
-                  <span class="percent">10%</span><span class="salePrice">16,110원</span>
+                  <span class="percent">10%</span><span class="salePrice">16,110원</span><br/>
                   <span class="originPrice">17,900원</span>
               </div>
           </div>
@@ -169,13 +176,12 @@ function Instagram(){
           <p>더 많은 고객 후기가 궁금하다면?</p>
       </div>
       <div class="image">
-        /**url 만료 */
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/299750222_3189510418045092_6083173906281154002_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=zhbO-waFtAcAX8tPuF_&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-XXKOABjQbMgmDbR01OYY_MFOAUN-a2lUhIPcrk5IcYg&oe=63037846"/></a>
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/298362099_586334389767927_3208823048695355163_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=CApSo3nxqBQAX9SOc9S&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-Fg0T7iTKcFLE4pkix4xhJApTmLZ14ncQDSEBkk7neIw&oe=630380AB"/></a>
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/298093370_155439073738448_3063437925065164283_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=jDH6VRLmaNIAX-aETX6&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_8AsOUSBUa0e076qazEiZC6XJ_yBjp4VYCi8jZWvbyBA&oe=630265E1"/></a>
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/297114872_518510886697838_7788308058485534607_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=7tnsoPLKxRsAX83k5tC&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8Pe3yvgITZNxU46XaGcFSpgUJKw9zUus-wZfr4mi7ukg&oe=63038C61"/></a>
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/296932394_171778925337107_1387866932129173530_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=ZMVs_-bA9V8AX87wVeI&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT85xNOfUxnPVvK--D90wIkEXnaIsUx0kg3wtyopIWIOuQ&oe=6302B4BF"/></a>
-          <a><img class="insta" src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/295914844_775288327220245_3783518540097333256_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=lsThJxRZQ3kAX9duW3r&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-dXuxtugDheKjYJcrOW5tnGvSqa98kCg9CpMxcKqSEBg&oe=63020C4C"/></a>
+          <a><img class="insta" src={insta_01}/></a>
+          <a><img class="insta" src={insta_02}/></a>
+          <a><img class="insta" src={insta_03}/></a>
+          <a><img class="insta" src={insta_04}/></a>
+          <a><img class="insta" src={insta_05}/></a>
+          <a><img class="insta" src={insta_06}/></a>
       </div>
       <div class="more">
           <p>더 많은 고객 후기가 궁금하다면?</p>
@@ -184,7 +190,7 @@ function Instagram(){
     </div>
   </section>
 }
-function Footer(){
+export function Footer(){
   return<footer>
     <div class="footer01">
       <div class="footer02">
