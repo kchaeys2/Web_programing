@@ -1,0 +1,84 @@
+{
+    "items01":[
+        {
+            "id":1,
+            "basket": "basket",
+            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
+            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
+            "percent":"20%",
+            "salePrice":"2,400원",
+            "originPrice":"3,000원",
+            "purpleName":"일일특가",
+            "purple":"none"
+        },
+        {
+            "id":2,
+            "basket": "basket",
+            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
+            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
+            "percent":"20%",
+            "salePrice":"2,400원",
+            "originPrice":"3,000원",
+            "purpleName":"20%",
+            "purple":"purpleSale"
+        },
+        {
+            "id":3,
+            "basket": "basket",
+            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
+            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
+            "percent":"20%",
+            "salePrice":"2,400원",
+            "originPrice":"3,000원",
+            "purpleName":"일일특가",
+            "purple":"purpleSale"
+        },
+        {
+            "id":4,
+            "basket": "basket",
+            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
+            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
+            "percent":"20%",
+            "salePrice":"2,400원",
+            "originPrice":"3,000원",
+            "purpleName":"일일특가",
+            "purple":"none"
+        }
+    ],
+    "caption01":[
+        {
+            "title":"이 상품 어때요?",
+            "arrow":"none",
+            "sub":"none"
+        },
+        {
+            "title":"선물세트 판매 TOP20",
+            "arrow":"arrow",
+            "sub":"none"
+        }
+    ],
+    "caption02":[
+        {
+            "title":"추석 선물 BIG SALE",
+            "arrow":"arrow",
+            "sub":"none"
+        },
+        {
+            "title":"놓지면 후회할 가격",
+            "arrow":"arrow",
+            "sub":"none"
+        },
+        {
+            "title":"마트 갈 시간이 없어요",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"평일 냉장고를 부탁해"
+        },
+        {
+            "title":"✌MZ세대 인기 BEST 상품",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템"
+        }
+    ]
+}

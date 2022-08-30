@@ -1,5 +1,4 @@
 import './App.css';
-import logo from './image/kurly_img.png';
 import insta_01 from './image/instagram_img01.jpg';
 import insta_02 from './image/instagram_img02.jpg';
 import insta_03 from './image/instagram_img03.jpg';
@@ -7,135 +6,19 @@ import insta_04 from './image/instagram_img04.jpg';
 import insta_05 from './image/instagram_img05.jpg';
 import insta_06 from './image/instagram_img06.jpg';
 
-export function Header(){
-  return<div class="header_inform">
-    <div class="login">
-      <a class="purple">회원가입</a> <div></div>  <a>로그인</a> <div></div> <a>고객센터<img src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
-    </div>
-  </div>
-}
-export function Search(){
-  return<div class="header_search">
-    <div class="left">
-      <img src={logo} alt='마켓컬리'/>
-      <button class="purple" type="menu">마켓컬리</button>
-      <div></div>
-      <button type="menu" class="gray">뷰티컬리</button>
-    </div>
-    <div class="search">
-      <input type="text" value="검색어를 입력해주세요"></input>
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxnIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Im0yNi4wODEgMjYuMDgxLTQuMTItNC4xMk0xNi40NjcgMjMuMzM0YTYuODY3IDYuODY3IDAgMSAwIDAtMTMuNzM0IDYuODY3IDYuODY3IDAgMCAwIDAgMTMuNzM0eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="></img>
-    </div>
-    <div class="service">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjcgNikiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJNOS4zMDYgMjRTMCAxNi41NDQgMCA5LjMwNmE5LjMwNiA5LjMwNiAwIDAgMSAxOC42MTIgMEMxOC42MTIgMTYuNTQ0IDkuMzA2IDI0IDkuMzA2IDI0eiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgY3g9IjkuMjEyIiBjeT0iOS4xMjMiIHI9IjIuNzg0Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"></img>
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yOC45MjcgOC44OTNhNi40NiA2LjQ2IDAgMCAwLTkuMTM5IDBsLTEuODI5IDEuODI4LTEuODI3LTEuODI4YTYuNDYyIDYuNDYyIDAgMSAwLTkuMTQgOS4xMzhMOC44MiAxOS44Nmw4LjQzMiA4LjQzNGExIDEgMCAwIDAgMS40MTQgMGw4LjQzMy04LjQzNGgwbDEuODI4LTEuODI4YTYuNDYgNi40NiAwIDAgMCAwLTkuMTM4eiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEuNyIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg=="></img>
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjE2NCA2LjU0NykiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJtMjUuNjggMy42Ni0yLjcyIDExLjU3SDcuMzdMNC42NiAzLjY2eiIvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIyMC41MiIgY3k9IjIwLjc4IiByPSIyLjE0Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjkuODEiIGN5PSIyMC43OCIgcj0iMi4xNCIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDMuOGwxLjc2IDcuNSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="></img>
-    </div>
-  </div>
+import Header from './functions/Header';
+import Goods from './functions/Goods';
+import dummy from './Data.json';
 
-}
-export function Nav(){
-  return<div class = "header_list">
-    <div class="category">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg=="/>
-      <span>카테고리</span>
-    </div>
-    <ul class="list">
-      <li>
-          <span>신상품</span>
-      </li>
-      <li>
-          <span>베스트</span>
-      </li>
-      <li>
-          <span>알뜰쇼핑</span>
-      </li>
-      <li>
-          <span>특가/혜택</span>
-      </li>
-    </ul>
-    <div class="deliver">
-      <a><span class="purple">샛별 · 낮</span>배송안내</a>
-    </div>
-  </div>
-}
 function Homeimg(){
   return<div class="home_image">
-        <img src="https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/4a0cd847-7e75-4039-9b97-cd87d862654f.jpg"/>
+        <img alt="" src="https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/4a0cd847-7e75-4039-9b97-cd87d862654f.jpg"/>
   </div>
 }
-function Goods1(){
-  return<section class="section01">
-    <div class="caption01">
-      <span>이 상품 어때요?</span>
-    </div>
-    <div class="list">
-      <button type="button"></button>
-      <button id = "reverse" type="button"></button>
-      <div class="li">
-          <div class="img">
-            <img class = "basket" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
-            <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1644543531994l0.jpg"/>
-          </div>
-          <div class="tag">
-              <div class="name">
-                  <h3>[아넬라]짜먹는 아넬라 HOP 5종</h3>
-              </div>
-              <div class="price">
-                  <span class="percent">20%</span><span class="salePrice">2,400원</span>
-                  <span class="originPrice">3,000원</span>
-              </div>
-          </div>
-      </div>
-      <div class="li">
-          <div class="img">
-              <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg"/>
-          </div>
-          <div class="tag">
-              <div class="name">
-                  <h3>[설치배송][LG전자]DIOS 오브제 컬렉션 식기세척기</h3>
-              </div>
-              <div class="price">
-                  <span class="percent">33%</span><span class="salePrice">1,096,200원</span>
-                  <span class="originPrice">1,652,000원</span>
-              </div>
-          </div>
-      </div>
-      <div class="li">
-          <div class="img">
-              <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1656921395862l0.jpg"/>
-          </div>
-          <div class="tag">
-              <div class="name">
-                  <h3>[설치배송][LG전자]TROMM ThinQ 드럼세탁기</h3>
-              </div>
-              <div class="price">
-                  <span class="percent">33%</span><span class="salePrice">920,900원</span>
-                  <span class="originPrice">1,387,900원</span>
-              </div>
-          </div>
-      </div>
-      <div class="li">
-          <div class="img">
-              <img class = "basket" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
-              <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1641453472687l0.jpg"/>
-          </div>
-          <div class="tag">
-              <div class="name">
-                  <h3>[선물세트]그래놀라가 들어간 담백견과 4종세트 1호</h3>
-              </div>
-              <div class="price">
-                  <span class="percent">10%</span><span class="salePrice">16,110원</span><br/>
-                  <span class="originPrice">17,900원</span>
-              </div>
-          </div>
-      </div>
-    </div>
-  </section>
-}
+
 function Ad(){
   return<section class = "ad">
-    <img src="https://product-image.kurly.com/banner/random-band/pc/img/e7b19a08-def2-4e5a-bcb5-dd48a20864fd.jpg"/>
+    <img  alt="" src="https://product-image.kurly.com/banner/random-band/pc/img/e7b19a08-def2-4e5a-bcb5-dd48a20864fd.jpg"/>
   </section>
 }
 function Timegoods(){
@@ -152,7 +35,7 @@ function Timegoods(){
       <div class="item">
           <div class="img">
               <div><span>일일특가</span></div>
-              <img class="main" src="https://img-cf.kurly.com/shop/data/goods/1614747154996z0.jpg"/>
+              <img alt="" class="main" src="https://img-cf.kurly.com/shop/data/goods/1614747154996z0.jpg"/>
           </div>
           <div class="tag">
               <div class="name">
@@ -168,6 +51,54 @@ function Timegoods(){
     </div>
   </section>
 }
+function Timegoods02(){
+  return<section>
+    <div class="dayday">
+      <div class="countdown">
+        <h2>일일특가</h2>
+        <h3>24시간 한정 특가</h3>
+        <div class="timer">
+
+        </div>
+        <p>망설이면 늦어요!</p>
+      </div>
+      <div class="dayItem">
+        <div class="dayItem01">
+          <div class="img">
+            <div><span>일일특가</span></div>
+            <img alt='' src="https://img-cf.kurly.com/shop/data/goods/1637921674319l0.jpg"/>
+          </div>
+          <div class="tag">
+            <div class="name">
+              <small>매콤달콤한 매력의 밥도둑</small>
+              <h3>홍대주꾸미 쭈꾸미 볶음 300g(냉동)</h3>
+            </div>
+            <div class="price">
+              <span class="percent">40%</span><span class="salePrice">4,740원</span>
+              <span class="originPrice">7,900원</span>
+            </div>
+          </div>
+        </div>
+        <div class="dayItem01">
+          <div class="img">
+            <div><span>일일특가</span></div>
+            <img alt='' src='https://img-cf.kurly.com/shop/data/goods/1601882398756l0.jpg'/>
+          </div>
+          <div class="tag">
+            <div class="name">
+              <small>매콤달콤한 매력의 밥도둑</small>
+              <h3>홍대주꾸미 쭈꾸미 볶음 300g(냉동)</h3>
+            </div>
+            <div class="price">
+              <span class="percent">40%</span><span class="salePrice">4,740원</span>
+              <span class="originPrice">7,900원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+}
 function Instagram(){
   return<section class="sectionfin">
   <div class="instagram">
@@ -176,12 +107,12 @@ function Instagram(){
           <p>더 많은 고객 후기가 궁금하다면?</p>
       </div>
       <div class="image">
-          <a><img class="insta" src={insta_01}/></a>
-          <a><img class="insta" src={insta_02}/></a>
-          <a><img class="insta" src={insta_03}/></a>
-          <a><img class="insta" src={insta_04}/></a>
-          <a><img class="insta" src={insta_05}/></a>
-          <a><img class="insta" src={insta_06}/></a>
+          <a><img alt="" class="insta" src={insta_01}/></a>
+          <a><img alt="" class="insta" src={insta_02}/></a>
+          <a><img alt="" class="insta" src={insta_03}/></a>
+          <a><img alt="" class="insta" src={insta_04}/></a>
+          <a><img alt="" class="insta" src={insta_05}/></a>
+          <a><img alt="" class="insta" src={insta_06}/></a>
       </div>
       <div class="more">
           <p>더 많은 고객 후기가 궁금하다면?</p>
@@ -243,34 +174,34 @@ export function Footer(){
 
           <ul class="f042">
               <li>
-                  <a><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png"/></a>
+                  <a><img alt="" src="https://res.kurly.com/pc/ico/1810/ico_instagram.png"/></a>
               </li>
               <li>
-                  <a><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png"/></a>
+                  <a><img alt="" src="https://res.kurly.com/pc/ico/1810/ico_fb.png"/></a>
               </li>
               <li>
-                  <a><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png"/></a>
+                  <a><img alt="" src="https://res.kurly.com/pc/ico/1810/ico_blog.png"/></a>
               </li>/
               <li>
-                  <a><img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png"/></a>
+                  <a><img alt="" src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png"/></a>
               </li>
               <li>
-                  <a><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png"/></a>
+                  <a><img alt="" src="https://res.kurly.com/pc/ico/1810/ico_youtube.png"/></a>
               </li>
           </ul>
         </div>
       </div>
       <div class="footer05">
         <a class="f051">
-            <img src="https://res.kurly.com/kurly/logo/isms_220310.png"/>
+            <img alt="" src="https://res.kurly.com/kurly/logo/isms_220310.png"/>
             <p>[인증범위] 마켓컬리 쇼핑몰 서비스 개발·운영<br/>[유효기간] 2022.01.19 ~ 2025.01.18</p>
         </a>
         <a class="f052">
-            <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png"/>
+            <img alt="" src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png"/>
             <p>개인정보보호 우수 웹사이트 ·<br/>개인정보처리시스템 인증 (ePRIVACY PLUS)</p>
         </a>
         <a class="f053">
-            <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png"/>
+            <img alt="" src="https://res.kurly.com/pc/service/main/2009/logo_payments.png"/>
             <p>고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br/>토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>
         </a>
       </div>  
@@ -287,12 +218,19 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Search></Search>
-      <Nav></Nav>
       <Homeimg></Homeimg>
-      <Goods1></Goods1>
+      {dummy.caption01.map(caption=>(
+        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub}/>
+      ))}
       <Ad></Ad>
       <Timegoods></Timegoods>
+      <Timegoods02/>
+      {dummy.caption02.map(caption=>(
+        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub} subtitle={caption.subtitle}/>
+      ))}
+      <Ad/>
+      <Goods title={"지금 가장 핫한 상품"} arrow={"arrow"} sub={"none"}/>
+      <Goods title={"마감 세일"} arrow={"arrow"} sub={"none"}/>
       <Instagram></Instagram>
       <Footer></Footer>
     </div>
