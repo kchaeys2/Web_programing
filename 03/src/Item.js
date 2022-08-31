@@ -1,5 +1,3 @@
-import * as Reuse from './App.js';
-
 function Cover(){
     return    <section class="main">
         <div class="article">
@@ -192,7 +190,8 @@ function Item(){
     return(
         <div>
         <Cover></Cover>
-        <Footer></Footer>
         </div>
     );
 }
+
+export default Item;

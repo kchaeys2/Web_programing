@@ -237,7 +237,7 @@ div,section{
     width: 1050px;
     margin: 0px auto;
     padding: 40px 0px;
-    height: 590.26px;
+    height: auto;
     position: relative;
 }
 .section01 .caption01{
@@ -264,9 +264,32 @@ div,section{
     position:relative;
     bottom: -5px;
 }
+.listBtn{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    height: auto;
+    margin: 20px 0px;
+}
+.listBtn li{
+    display: block;
+}
+.listBtn button{
+    border: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 22px;
+    margin: 0px 5px 20px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 16px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(51, 51, 51);
+}
 .section01 .list{
     display: flex;
     height: 435.06px;
+    margin: 20px 0px 30px;;
 }
 .list button{
     border: none;
@@ -368,6 +391,26 @@ div,section{
     color: white;
     font-weight: bold;
     line-height: 1.43px;
+}
+.listBtn_more{
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 516px;
+    height: 56px;
+    border-radius: 3px;
+    border: 1px solid rgb(227, 227, 227);
+    cursor: pointer;
+}
+.listBtn_more span{
+    padding: 0px 17px;
+    background-size: 18px 18px;
+    font-size: 16px;
+    letter-spacing: -0.27px;
+    line-height: 15px;
 }
 /*광고배너*/
 .ad{
@@ -725,4 +768,39 @@ footer dd{
     line-height: 16px;
     color: rgb(153, 153, 153);
     letter-spacing: -0.5px;
+}
+
+
+/*slide*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

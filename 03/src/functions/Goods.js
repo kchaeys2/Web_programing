@@ -1,4 +1,4 @@
-import dummy from './Data.json';
+import dummy from '../Data.json';
 
 function Goodimg(props){
     return<div class="img">
@@ -23,6 +23,15 @@ function Goods1(props){
     <div class="caption01">
       <span class="title">{props.title}</span><img class={props.arrow} alt='' src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0wIDBoMzJ2MzJIMHoiLz4KICAgICAgICA8cGF0aCBkPSJtMTAuOTUyIDIzLjM4NCAyLjA5NiAyLjE0NiAxMC4wNTUtOS44MjUtOS43MDEtMTAuMjc4LTIuMTgyIDIuMDYgNy42NzcgOC4xMzN6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz4KICAgIDwvZz4KPC9zdmc+Cg=='/>
       <p class={props.sub}>{props.subtitle}</p>
+      <ul class="none">
+        <li><button>정육·가공육·건육</button></li>
+        <li><button>홍삼·즙·건강식품</button></li>
+        <li><button>수산·건어물·젓갈</button></li>
+        <li><button>과일·견과·곡류</button></li>
+        <li><button>디저트·커피·차</button></li>
+        <li><button>생활·주방·뷰티</button></li>
+        <li><button>면·양념·오일·캔</button></li>
+      </ul>
     </div>
     <div class="list">
       <button type="button"></button>
@@ -34,6 +43,7 @@ function Goods1(props){
           </div>
       ))}
     </div>
+    <div class="listBtn_more"><span>디저트·커피·차 전체보기</span></div>
   </section>
 }
 
