@@ -733,7 +733,7 @@ footer dd{
 .footer05{
     display: flex;
     height: 79px;
-    padding: 20px 0px 24px;
+    margin: 20px 0px 24px;
     border-top: 1px solid rgb(238, 238, 238);
     letter-spacing: 0px;
 }
