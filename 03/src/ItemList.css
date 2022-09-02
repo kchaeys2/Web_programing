@@ -1,14 +1,14 @@
-.li{
+.il{
     width: 100%;
     padding: 50px 0px 60px;
     background-color: rgb(255, 255, 255);
 }
-.li01{
+.il01{
     width: 1050px;
     margin: 0px auto;
     align-content: center;
 }
-.li01 h3{
+.il01 h3{
     padding: 15px 0px 24px;
     font-weight: 500;
     font-size: 28px;
@@ -16,7 +16,7 @@
     letter-spacing: -0.5px;
     text-align: center;
 }
-.li01 span{
+.il01 span{
     display: inline-block;
     overflow: hidden;
     max-width: 840px;
@@ -25,4 +25,55 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     vertical-align: top;
+}
+.il011{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 18px 0px 16px;
+}
+.il011-1{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.il011 ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.il011 li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 24px;
+    margin-left: 8px;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+#li-01{
+    margin-right: -4px;
+}
+#li-01 a{
+    letter-spacing: -0.3px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.il01 li:not(:first-of-type)::before{
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 10px;
+    margin-right: 8px;
+    background-color: rgb(226, 226, 226);
+}
+.il012{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
 }
