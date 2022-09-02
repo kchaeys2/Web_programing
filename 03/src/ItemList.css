@@ -1,0 +1,28 @@
+.li{
+    width: 100%;
+    padding: 50px 0px 60px;
+    background-color: rgb(255, 255, 255);
+}
+.li01{
+    width: 1050px;
+    margin: 0px auto;
+    align-content: center;
+}
+.li01 h3{
+    padding: 15px 0px 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+.li01 span{
+    display: inline-block;
+    overflow: hidden;
+    max-width: 840px;
+    color: rgb(95, 0, 128);
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
