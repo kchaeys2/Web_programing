@@ -170,10 +170,17 @@ div,section{
 }
 /*[head] 카테고리 부분*/
 .header_list{
-    width: 1050px;
+    min-width: 1050px;
     height: 56px;
     display: flex;
     position: relative;
+}
+.header_shadow{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    right:-10%;
+    box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px;
 }
 .header_list .category{
     position: relative;
@@ -505,7 +512,7 @@ div,section{
     margin: 0px 0px 6px;
 }
 .tag .price{
-    height: 30px;
+    height: auto;
 }
 .price .percent{
     font-weight: bold;
@@ -598,17 +605,17 @@ div,section{
     width: 175px;
     height: 175px;
 }
-.more{
+.Appmore{
     text-align: center;
     margin: 40px 0px 0px;
 }
-.more p{
+.Appmore p{
     font-size: 16px;
     color: #999999;
     font-weight: 400px;
     height: 30.04px;
 }
-.more a{
+.Appmore a{
     font-size: 16px;
     height: 30.04px;
     font-weight: 500px;

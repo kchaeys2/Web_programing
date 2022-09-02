@@ -54,6 +54,7 @@ function Nav(){
       <div class="deliver">
         <a><span class="purple">샛별 · 낮</span>배송안내</a>
       </div>
+      <div class="header_shadow"/>
     </div>
 }
 

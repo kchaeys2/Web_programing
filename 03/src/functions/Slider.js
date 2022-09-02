@@ -20,10 +20,11 @@ function Slider() {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        /*
         pagination={{
-          clickable: true,
+          clickable: true,  //밑에 위치 알려줌
         }}
-        navigation={true}
+        navigation={true} //화살표*/
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

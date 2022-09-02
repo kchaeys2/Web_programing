@@ -118,7 +118,7 @@ function Instagram(){
           <a><img alt="" class="insta" src={insta_05}/></a>
           <a><img alt="" class="insta" src={insta_06}/></a>
       </div>
-      <div class="more">
+      <div class="App_more">
           <p>더 많은 고객 후기가 궁금하다면?</p>
           <a>@marketkurly_regram</a>
       </div>
