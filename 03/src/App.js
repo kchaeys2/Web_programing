@@ -118,7 +118,7 @@ function Instagram(){
           <a><img alt="" class="insta" src={insta_05}/></a>
           <a><img alt="" class="insta" src={insta_06}/></a>
       </div>
-      <div class="App_more">
+      <div class="Appmore">
           <p>더 많은 고객 후기가 궁금하다면?</p>
           <a>@marketkurly_regram</a>
       </div>
@@ -132,17 +132,15 @@ function App() {
       <Header></Header>
       <Homeimg></Homeimg>
       {dummy.caption01.map(caption=>(
-        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub}/>
+        <Goods item={caption.item}title={caption.title} arrow={caption.arrow} sub={caption.sub} listBtn={caption.button} listBtn_more={caption.moreBtn} more={caption.more}/>
       ))}
       <Ad></Ad>
       <Timegoods></Timegoods>
       <Timegoods02/>
       {dummy.caption02.map(caption=>(
-        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub} subtitle={caption.subtitle}/>
+        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub} subtitle={caption.subtitle} listBtn={caption.button} listBtn_more={caption.moreBtn} more={caption.more}/>
       ))}
       <Ad/>
-      <Goods title={"지금 가장 핫한 상품"} arrow={"arrow"} sub={"none"}/>
-      <Goods title={"마감 세일"} arrow={"arrow"} sub={"none"}/>
       <Instagram></Instagram>
       <Footer></Footer>
     </div>

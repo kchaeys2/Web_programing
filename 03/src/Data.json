@@ -1,84 +1,203 @@
 {
-    "items01":[
+    "itemsN":[
         {
             "id":1,
-            "basket": "basket",
-            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
-            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
-            "percent":"20%",
-            "salePrice":"2,400원",
-            "originPrice":"3,000원",
-            "purpleName":"일일특가",
-            "purple":"none"
-        },
-        {
-            "id":2,
-            "basket": "basket",
-            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
-            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
-            "percent":"20%",
-            "salePrice":"2,400원",
-            "originPrice":"3,000원",
-            "purpleName":"20%",
-            "purple":"purpleSale"
-        },
-        {
-            "id":3,
-            "basket": "basket",
-            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
-            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
-            "percent":"20%",
-            "salePrice":"2,400원",
-            "originPrice":"3,000원",
-            "purpleName":"일일특가",
-            "purple":"purpleSale"
-        },
-        {
-            "id":4,
-            "basket": "basket",
-            "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653035364597l0.jpg",
-            "name":"[아넬라]짜먹는 아넬라 HOP 5종",
-            "percent":"20%",
-            "salePrice":"2,400원",
-            "originPrice":"3,000원",
-            "purpleName":"일일특가",
-            "purple":"none"
+            "items":[
+                {
+                    "id":1,
+                    "basket": "basket",
+                    "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1583135502852l0.jpg",
+                    "name":"[보스코도로] 포르치니 버섯 소스",
+                    "percent":"20%",
+                    "salePrice":"10,240원",
+                    "originPrice":"12,800원",
+                    "purpleName":"일일특가",
+                    "purple":"none"
+                },
+                {
+                    "id":2,
+                    "basket": "basket",
+                    "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1610514593464l0.jpg",
+                    "name":"[심플리오] 어니스트 주방세제 포레스트향  2종",
+                    "percent":"",
+                    "salePrice":"7,400원",
+                    "originPrice":"",
+                    "purpleName":"20%",
+                    "purple":"none"
+                },
+                {
+                    "id":3,
+                    "basket": "basket",
+                    "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1646990968239l0.jpg",
+                    "name":"[에스파뇰라] 엑스트라 버진 스프레이",
+                    "percent":"10%",
+                    "salePrice":"8,910원",
+                    "originPrice":"9,900원",
+                    "purpleName":"+10%쿠폰",
+                    "purple":"purpleSale"
+                },
+                {
+                    "id":4,
+                    "basket": "basket",
+                    "image":"https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1653037091448l0.jpeg",
+                    "name":"[Kim's Butcher] 미국산 우삼겹 돌돌말이 500g (냉동)",
+                    "percent":"",
+                    "salePrice":"9,900원",
+                    "originPrice":"",
+                    "purpleName":"일일특가",
+                    "purple":"none"
+                }
+            ]
         }
     ],
     "caption01":[
         {
             "title":"이 상품 어때요?",
             "arrow":"none",
-            "sub":"none"
+            "sub":"none",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         },
         {
             "title":"선물세트 판매 TOP20",
             "arrow":"arrow",
-            "sub":"none"
+            "sub":"none",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         }
     ],
     "caption02":[
         {
             "title":"추석 선물 BIG SALE",
             "arrow":"arrow",
-            "sub":"none"
+            "sub":"none",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         },
         {
             "title":"놓지면 후회할 가격",
             "arrow":"arrow",
-            "sub":"none"
+            "sub":"none",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         },
         {
             "title":"마트 갈 시간이 없어요",
             "arrow":"arrow",
             "sub":"sub",
-            "subtitle":"평일 냉장고를 부탁해"
+            "subtitle":"평일 냉장고를 부탁해",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         },
         {
             "title":"✌MZ세대 인기 BEST 상품",
             "arrow":"arrow",
             "sub":"sub",
-            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템"
+            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"지금 가장 핫한 상품",
+            "arrow":"arrow",
+            "sub":"none",
+            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"마감 세일",
+            "arrow":"arrow",
+            "sub":"none",
+            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"50만원 쓰는 라벤더의 선택",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"한 달에 50만원 넘게 쓴 고객의 이번주 구매상품",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"MD의 추천",
+            "arrow":"arrow",
+            "sub":"none",
+            "subtitle":"MZ세대라면 모를 수가 없는 컬리 인기템",
+            "button":"listBtn",
+            "moreBtn":"listBtn_more",
+            "more":"과일.견과.쌀 전체보기",
+            "item":0
+        },
+        {
+            "title":"속이 가득한 샌드위치",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"든든하고 풍성한 한 끼를 원한다면 골라보세요!",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"컬리가 만든,Kurly's",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"퀄리티는 높게,가격은 합리적으로",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"100만원 쓰는 퍼플의 선택",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"한 달에 100만원 넘게 쓴 고객의 이번주 구매상품",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"오늘의 신상품 TOP50",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"출시 2주만에 1171개 판매된 신상품은?",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
+        },
+        {
+            "title":"1만원대 구매가 많은 인기상품",
+            "arrow":"arrow",
+            "sub":"sub",
+            "subtitle":"최근 2주간 구매량이 가장 많았어요",
+            "button":"none",
+            "moreBtn":"none",
+            "more":"",
+            "item":0
         }
     ],
     "button":[

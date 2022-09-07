@@ -247,7 +247,7 @@ div,section{
 }
 .section01 .caption01{
     margin: 0px 0px 27px;
-    height: 48.2px;
+    height: auto;
     text-align: center;
 }
 .caption01 .title{
@@ -334,8 +334,8 @@ div,section{
     position: absolute;
     width: 45px;
     height: 45px;
-    right: 0px;
-    bottom: 0px;
+    right: 10px;
+    bottom: 10px;
 }
 .li .tag{
     width: 249px;
@@ -568,8 +568,8 @@ div,section{
     position: absolute;
     width: 45px;
     height: 45px;
-    right: 0px;
-    bottom: 0px;
+    right: 10px;
+    bottom: 10px;
     z-index: 2;
 }
 .dayItem01 .tag{
@@ -788,18 +788,8 @@ footer dd{
 }
 .swiper-slide {
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+
 }
 
 .swiper-slide img {
