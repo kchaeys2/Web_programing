@@ -14,9 +14,25 @@ import dummy from './Data.json';
 
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
+import {useState} from 'react';
+
 function Homeimg(){
-  return<div class="home_image">
+  const [isHovering, setIsHovering] = useState(0);
+
+  return<div class="home_image"
+    onMouseOver={() => setIsHovering(1)}
+    onMouseOut={() => setIsHovering(0)}
+  >
     <Slide></Slide>
+    {isHovering ? (
+          <>
+            <button class="left"/>
+            <button class="right"/>
+          </>
+        ) : (
+          ""
+    )}
+    <div class="current">11 / 12</div>
   </div>
 }
 

@@ -14,7 +14,7 @@ function Slider() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -22,9 +22,9 @@ function Slider() {
         }}
         /*
         pagination={{
-          clickable: true,  //ë°‘ì— ìœ„ì¹˜ ì•Œë ¤ì¤Œ
+          clickable: true,  //ë°‘ì— ?œ„ì¹? ?•Œ? ¤ì¤?
         }}
-        navigation={true} //í™”ì‚´í‘œ*/
+        navigation={true} //?™”?‚´?‘œ*/
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -37,6 +37,7 @@ function Slider() {
         <SwiperSlide><img class="swiperimg" alt=" " src="https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/2897638e-926a-4db4-b5a0-f0bbbde7c299.jpg"/></SwiperSlide>
         <SwiperSlide><img class="swiperimg" alt=" " src="https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/974b30f2-2512-4427-a646-92996fd24b65.jpg"/></SwiperSlide>
         <SwiperSlide><img class="swiperimg" alt=" " src="https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/eb905cc6-a482-486b-b674-6add94399e81.jpg"/></SwiperSlide>
+
       </Swiper>
     </>
   );
