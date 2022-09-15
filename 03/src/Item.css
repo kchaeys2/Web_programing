@@ -88,7 +88,7 @@ div,section{
     line-height: 30px;
     letter-spacing: -0.5px;
 }
-.price .salePrice{
+.n01 .price .salePrice{
     font-size: 28px;
 }
 .n02{
@@ -116,7 +116,7 @@ div,section{
     line-height: 19px;
     letter-spacing: -0.5px;
 }
-.tag .price{
+.n03 .tag .price{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -125,17 +125,17 @@ div,section{
     line-height: 30px;
     letter-spacing: -0.5px;
 }
-.price .percent{
+.n03 .price .percent{
     padding-right: 9px;
     font-size: 28px;
     color: rgb(250, 98, 47);
 }
-.price .salePercent{
+.n03 .price .salePercent{
     padding-right: 4px;
     font-size: 28px;
     color: rgb(51, 51, 51);
 }
-.price .won{
+.n03 .price .won{
     display: inline-block;
     position: relative;
     top: 3px;

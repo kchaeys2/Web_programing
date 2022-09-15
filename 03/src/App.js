@@ -7,18 +7,14 @@ import insta_05 from './image/instagram_img05.jpg';
 import insta_06 from './image/instagram_img06.jpg';
 
 import Header from './functions/Header';
-import Slide from './functions/Slider';
+import Slider from './functions/Slider';
 import Goods from './functions/Goods';
 import Footer from './functions/Footer';
 import dummy from './Data.json';
 
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
-function Homeimg(){
-  return<div class="home_image">
-    <Slide></Slide>
-  </div>
-}
+import {useState} from 'react';
 
 function Ad(){
   return<section class = "ad">
@@ -118,7 +114,7 @@ function Instagram(){
           <a><img alt="" class="insta" src={insta_05}/></a>
           <a><img alt="" class="insta" src={insta_06}/></a>
       </div>
-      <div class="App_more">
+      <div class="Appmore">
           <p>더 많은 고객 후기가 궁금하다면?</p>
           <a>@marketkurly_regram</a>
       </div>
@@ -130,19 +126,17 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Homeimg></Homeimg>
+      <Slider/>
       {dummy.caption01.map(caption=>(
-        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub}/>
+        <Goods item={caption.item}title={caption.title} arrow={caption.arrow} sub={caption.sub} listBtn={caption.button} listBtn_more={caption.moreBtn} more={caption.more}/>
       ))}
       <Ad></Ad>
       <Timegoods></Timegoods>
       <Timegoods02/>
       {dummy.caption02.map(caption=>(
-        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub} subtitle={caption.subtitle}/>
+        <Goods title={caption.title} arrow={caption.arrow} sub={caption.sub} subtitle={caption.subtitle} listBtn={caption.button} listBtn_more={caption.moreBtn} more={caption.more}/>
       ))}
       <Ad/>
-      <Goods title={"지금 가장 핫한 상품"} arrow={"arrow"} sub={"none"}/>
-      <Goods title={"마감 세일"} arrow={"arrow"} sub={"none"}/>
       <Instagram></Instagram>
       <Footer></Footer>
     </div>

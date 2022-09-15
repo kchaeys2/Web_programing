@@ -32,14 +32,7 @@ function List(){
                         </li>
                     </ul>
                 </div>
-                <div class="il012">
-                    {dummy.ItemList.map(item=>(
-                        <div class="li012-1">
-                            <Goodimg image={item.image} key={item.id}/>
-                            <Tag subname={item.subname} name={item.name} price={item.price} intro={item.intro} key={item.id}/>
-                        </div>
-                    ))}
-                </div>
+                <Goods/>
                 <div class="buttonsNP">
                     <a><img alt=" " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAHUlEQVR42mNgAIPi/8X/kWkwA8SE0UQIMJAsCKMBBzk27fqtkcYAAAAASUVORK5CYII="/></a>
                     <a><img alt=" " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"/></a>
@@ -60,6 +53,16 @@ function List(){
         </div>
     </>
 }
+function Goods(props){
+    return<div class="il012">
+        {dummy.ItemList.map(item=>(
+            <div class="li012-1">
+                <Goodimg image={item.image} key={item.id}/>
+                <Tag tagS03={item.tagS03} subname={item.subname} name={item.name} price={item.price} per={item.per} origin={item.origin} using={item.using} intro={item.intro} key={item.id}/>
+            </div>
+        ))}
+    </div>
+}
 function Goodimg(props){
     return<>
         <div class="goodimg01">
@@ -73,8 +76,15 @@ function Tag(props){
     <div class="tag01">
         <span class="tagS01"><span>{props.subname}</span></span>
         <div class="tagTitle">{props.name}</div>
-        <div class="tagS02"><span>{props.price}</span></div>
+        <div class="tagPrices">
+            <div class="tagP01">
+                <div class="tagS04"><span>{props.per}</span></div>
+                <div class="tagS02"><span>{props.price}</span></div>
+            </div>
+            <span class="tagS05">{props.origin}</span>
+        </div>
         <p>{props.intro}</p>
+        <div class={props.tagS03}><span>{props.using}</span></div>
     </div>
   </>
 }
