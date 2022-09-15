@@ -35,7 +35,7 @@ function Slider() {
         pagination={{
           type: "fraction",
         }}
-        navigation={{button}} //?™”?‚´?‘œ
+        navigation={{button}} //?¢â¡±??¢¥?¡®©«
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

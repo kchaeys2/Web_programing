@@ -338,8 +338,8 @@ div,section{
     position: absolute;
     width: 45px;
     height: 45px;
-    right: 10px;
-    bottom: 10px;
+    right: 110px;
+    bottom: 110px;
 }
 .li .tag{
     width: 249px;
@@ -572,8 +572,8 @@ div,section{
     position: absolute;
     width: 45px;
     height: 45px;
-    right: 10px;
-    bottom: 10px;
+    right: 110px;
+    bottom: 110px;
     z-index: 2;
 }
 .dayItem01 .tag{
