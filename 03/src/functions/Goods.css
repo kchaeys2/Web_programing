@@ -5,7 +5,7 @@
         50% 50%;
     height: 60px;
     width: 60px;
-    top: 45%;
+    top: 40%;
     left: -3%;
     z-index: 2;
 }
@@ -16,8 +16,11 @@
         50% 50%;
     height: 60px;
     width: 60px;
-    top: 45%;
+    top: 40%;
     z-index: 2;
     transform: rotate(180deg);
     left: 97%;
+}
+.swiper{
+    position: inherit;
 }

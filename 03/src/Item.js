@@ -1,7 +1,6 @@
 import './Item.css';
 import './App.css';
-import Header from './functions/Header';
-import Footer from './functions/Footer';
+import { useEffect, useState } from 'react';
 
 function Cover(){
     return    <section class="main">
@@ -66,16 +65,7 @@ function Cover(){
 
                 </div>
                 <div class="order">
-                    <div class="num"> 
-                        <dl>
-                            <dt>구매수량</dt>
-                            <div class="button">
-                                <button id="left"></button>
-                                <div>1</div>
-                                <button id="right"></button>
-                            </div>
-                        </dl>
-                    </div>
+                    <Amount/>
                     <div class="finPrice">
                         <div class="originPrice">
                             <span class="coin">총 상품금액:</span><span class="salePrice">15,180</span><span class="won">원</span>
@@ -330,6 +320,28 @@ function Cover(){
             </div>
         </div>    
     </section>
+}
+function Amount(){
+    const[amount,setAmount] = useState(1);
+
+    const handleAmoutPlus = () =>{
+        setAmount(amount+1)
+    }
+    const handleAmoutSub = () =>{
+        if (parseInt(amount) > 1) {
+            setAmount(amount-1)
+        }
+    }
+    return(<div class="num"> 
+    <dl>
+        <dt>구매수량</dt>
+        <div class="button">
+            <button id="left" onClick={handleAmoutSub}></button>
+            <div>{amount}</div>
+            <button id="right" onClick={handleAmoutPlus}></button>
+        </div>
+    </dl>
+</div>);
 }
 function Goods09(){
     return<>

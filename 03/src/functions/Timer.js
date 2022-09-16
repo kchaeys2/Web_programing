@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 function Timer(){
-    const [hours,setHours] = useState(24);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+    const [hours,setHours] = useState(1);
+    const [minutes, setMinutes] = useState(1);
+    const [seconds, setSeconds] = useState(2);
   
     useEffect(() => {
       const countdown = setInterval(() => {
@@ -11,9 +11,9 @@ function Timer(){
           setSeconds(parseInt(seconds) - 1);
         }
         if (parseInt(seconds) === 0) {
-          if (parseInt(minutes) === 0) {
+          if(parseInt(minutes)===0){
             clearInterval(countdown);
-          } else {
+          }else{
             setMinutes(parseInt(minutes) - 1);
             setSeconds(59);
           }
@@ -22,8 +22,8 @@ function Timer(){
             if (parseInt(hours) === 0) {
                 clearInterval(countdown);
               } else {
-                setMinutes(parseInt(hours) - 1);
-                setSeconds(59);
+                setHours(parseInt(hours) - 1);
+                setMinutes(59);
               }
         }
       }, 1000);
@@ -32,7 +32,7 @@ function Timer(){
 
     return(<>
         <h2>
-        {hours}:{minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+        {hours < 10 ? `0${hours}` : hours}:{minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
         </h2>
     </>);
 }

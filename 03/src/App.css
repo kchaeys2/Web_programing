@@ -80,9 +80,11 @@ div,section{
     font-size: 12px;
     width: 42.79px;
     height: 13.79px;
+    text-decoration: none;
+    color: #000;
 }
-.purple{
-    color: rgb(95, 0, 128);
+.login .purple{
+    color: #5F0080;
 }
 .login div{
     border: none;
@@ -142,7 +144,7 @@ div,section{
     border: 1px solid #5F0080;
     border-radius: 7px;
 }
-.search input[value]{
+.search input{
     position: relative;
     background: none;
     border: none;
@@ -152,6 +154,9 @@ div,section{
     font-size: 18px;
     bottom: 5px;
     left: 15px;
+}
+.search input[value]:focus-within{
+    border: none;
 }
 .search img{
     position: relative;
@@ -209,6 +214,9 @@ div,section{
     padding:18px 0px 0px;
     line-height: 20px;
     text-align: center;
+}
+.list li:hover{
+    color: #5F0080;
 }
 .header_list .deliver{
     width: 15%;
@@ -294,7 +302,8 @@ div,section{
 .section01 .list{
     display: flex;
     height: 435.06px;
-    margin: 20px 0px 30px;;
+    margin: 20px 0px 30px;
+    z-index: 1;
 }
 .list .li{
     margin: 0 auto;
