@@ -6,7 +6,7 @@ function Header(){
     return<div>
         <div class="header_inform">
       <div class="login">
-        <a class="purple">회원가입</a> <div></div>  <a>로그인</a> <div></div> <a>고객센터<img alt="" src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
+        <a class="purple">회원가입</a> <div></div>  <Link to={'/Login'}><a>로그인</a></Link> <div></div> <a>고객센터<img alt="" src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
       </div>
     </div>
     <Search></Search>

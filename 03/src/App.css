@@ -240,6 +240,7 @@ div,section{
     position: relative;
 }
 .section01 .caption01{
+    position: relative;
     margin: 0px 0px 27px;
     height: auto;
     text-align: center;
@@ -312,8 +313,9 @@ div,section{
 }
 
 .Goods_transform{
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-size: cover;
+    transition: .5s;
 }
 .none{
     display: none;
@@ -440,7 +442,15 @@ div,section{
     color: #999999;
 }
 .countdown .timer{
-    height: 47px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 136px;
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
 }
 .countdown p{
     height: 20.01px;

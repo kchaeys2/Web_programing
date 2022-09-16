@@ -3,6 +3,7 @@ import Slider from './functions/Slider';
 import Goods from './functions/Goods';
 import dummy from './Data.json';
 import Instagram from "./functions/Instagram";
+import Timer from './functions/Timer';
 
 function Timegoods(){
     return<section class="spacialSale">
@@ -11,7 +12,7 @@ function Timegoods(){
             <h2>일일특가</h2>
             <h3>24시간 한정 특가</h3>
             <div class="timer">
-  
+              <Timer/>
             </div>
             <p>망설이면 늦어요!</p>
         </div>
@@ -41,7 +42,7 @@ function Timegoods(){
           <h2>일일특가</h2>
           <h3>24시간 한정 특가</h3>
           <div class="timer">
-  
+            <Timer/>
           </div>
           <p>망설이면 늦어요!</p>
         </div>

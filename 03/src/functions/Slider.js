@@ -13,15 +13,7 @@ function Slider() {
 
   let button;
   return (
-    <div div class="home_image"
-    onMouseOver={() => setIsHovering(1)}
-    onMouseOut={() => setIsHovering(0)}
-    >
-    {isHovering ? (
-        button = true
-        ) : (
-        button=false
-    )}
+    <div div class="home_image">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
