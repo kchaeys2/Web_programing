@@ -1,13 +1,11 @@
-import Header from "./functions/Header";
-import Footer from "./functions/Footer";
 import './ItemList.css';
 import dummy from "./Data.json";
-
-function List(){
+import { Link } from 'react-router-dom';
+function List(props){
     return<>
         <div class="il">
             <div class="il01">
-                <h3>'<span>다이어트</span>' 에 대한 검색결과</h3>
+                <h3>'<span>{props.search}</span>' 에 대한 검색결과</h3>
                 <div class="il011">
                     <div class="il011-1">총 567건</div>
                     <ul>
@@ -65,10 +63,12 @@ function Goods(props){
 }
 function Goodimg(props){
     return<>
+    <Link to={"/Item"}>
         <div class="goodimg01">
             <img alt=" " src={props.image}/>
             <div><button><img alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="/></button></div>
         </div>
+        </Link>
     </>
   }
 function Tag(props){
@@ -91,7 +91,7 @@ function Tag(props){
 function ItemList(){
     return(
         <>
-            <List></List>
+            <List search="다이어트"/>
         </>
     );
 }
