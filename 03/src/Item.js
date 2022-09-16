@@ -392,9 +392,7 @@ function Goods10(){
 function Item(){
     return(
         <div>
-        <Header/>
         <Cover></Cover>
-        <Footer/>
         </div>
     );
 }

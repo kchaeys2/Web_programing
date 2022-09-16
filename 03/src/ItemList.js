@@ -91,9 +91,7 @@ function Tag(props){
 function ItemList(){
     return(
         <>
-            <Header></Header>
             <List></List>
-            <Footer></Footer>
         </>
     );
 }

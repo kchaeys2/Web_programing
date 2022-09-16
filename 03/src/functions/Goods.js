@@ -1,6 +1,38 @@
 import dummy from '../Data.json';
-import {useState} from 'react';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "./Goods.css";
+
+// import required modules
+import { Navigation } from "swiper";
+
+function GSlide(){
+  return<div class="list">
+    <Swiper
+        slidesPerView={4}
+        spaceBetween={10}
+        slidesPerGroup={4}
+        loop={true}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+    >
+      {dummy.items.map(item=>(
+          <SwiperSlide>
+            <div class="li">
+              <Goodimg basket={item.basket} image={item.image} key={item.id} purpleName={item.purpleName} purple={item.purple}/>
+              <Tag name={item.name} percent={item.percent} salePrice={item.salePrice} originPrice={item.originPrice} purpleName={item.purpleName} purple={item.purple} key={item.id}/>
+            </div>
+          </SwiperSlide>
+      ))}
+      
+    </Swiper>
+  </div>
+}
 function Goodimg(props){
   const [isHovering, setIsHovering] = useState(0);
     return<div class="img"
@@ -42,16 +74,8 @@ function Goods1(props){
       ))}
       </ul>
     </div>
-    <div class="list">
-      <button type="button"></button>
-      <button id = "reverse" type="button"></button>
-      {dummy.items.map(item=>(
-          <div class="li">
-              <Goodimg basket={item.basket} image={item.image} key={item.id} purpleName={item.purpleName} purple={item.purple}/>
-              <Tag name={item.name} percent={item.percent} salePrice={item.salePrice} originPrice={item.originPrice} purpleName={item.purpleName} purple={item.purple} key={item.id}/>
-          </div>
-      ))}
-    </div>
+    <GSlide/>
+
     <div class={props.listBtn_more}><span>{props.more}</span></div>
   </section>
 }

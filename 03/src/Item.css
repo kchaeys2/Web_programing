@@ -843,3 +843,6 @@ nav div span{
 .goods08:last-child{
     border: 1px solid rgb(221, 221, 221);
 }
+.article .percent,.article .salePrice,.article .won{
+    font-size: 24px;
+}
