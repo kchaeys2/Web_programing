@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './kurly_img.png';
+import logo from '../image/kurly_img.png';
 
 function Header(){
     return<div>
