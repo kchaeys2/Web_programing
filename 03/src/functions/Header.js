@@ -1,25 +1,86 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../image/kurly_img.png';
 
 function Header(){
+  const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
+  const [ScrollActive, setScrollActive] = useState(false);
+  function handleScroll() {
+    if (ScrollY > 156) {
+      setScrollY(window.pageYOffset);
+      setScrollActive(true);
+    } else {
+      setScrollY(window.pageYOffset);
+      setScrollActive(false);
+    }
+  }
+  useEffect(() => {
+    function scrollListener() {
+      window.addEventListener("scroll", handleScroll);
+    } //  window 에서 스크롤을 감시 시작
+    scrollListener(); // window 에서 스크롤을 감시
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }; //  window 에서 스크롤을 감시를 종료
+  });
     return<div>
-        <div class="header_inform">
-      <div class="login">
-        <a class="purple">회원가입</a> <div></div>  <Link to={'/Login'}><a>로그인</a></Link> <div></div> <a>고객센터<img alt="" src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
+      <div class={ScrollActive? "scroll":"none" }>
+        <div class="scrollCover">
+          <div class="scroll01">
+            <span></span>
+            <span>카테고리</span>
+          </div>
+          <ul>
+            <li>
+                <span>신상품</span>
+            </li>
+            <li>
+                <span>베스트</span>
+            </li>
+            <li>
+                <span>알뜰쇼핑</span>
+            </li>
+            <li>
+                <span>특가/혜택</span>
+            </li>
+          </ul>
+          <div class="scrollsearch">
+            <input placeholder='검색어를 입력해주세요'/>
+            <button/>
+          </div>
+          <div class="scrolletcBtn">
+            <div class="scrolletcBtn01"></div>
+            <button/>
+            <div class="scrolletcBtn02">
+              <button/>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <Search></Search>
-    <Nav></Nav>
+      <div class={ScrollActive ? "none" : ""}>
+        <div class="header_inform">
+          <div class="login">
+            <a class="purple">회원가입</a> <div></div>  <Link to={'/Login'}><a>로그인</a></Link> <div></div> <a>고객센터<img alt="" src="https://res.kurly.com/pc/ico/1908/ico_down_16x10.png"></img></a>
+          </div>
+        </div>
+        <Search></Search>
+        <Nav></Nav>
+      </div>
     </div>
 }
 function Search(){
+  const navigate = useNavigate();
+
   const[search,setSearch] = useState('');
 
   const handleSearch = (e) =>{
     setSearch(e.target.value);
   }
-
+  const onClickSerachBtn = () =>{
+    navigate("/ItemList",{
+      state:search,
+    });
+  }
     return<div class="header_search">
       <div class="left">
         <Link to={"/"}>
@@ -31,9 +92,7 @@ function Search(){
       </div>
       <div class="search">
         <input type="text" name='search' placeholder="검색어를 입력해주세요" value={search} onChange={handleSearch}></input>
-        <Link to={"/ItemList"}>
-        <img alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxnIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Im0yNi4wODEgMjYuMDgxLTQuMTItNC4xMk0xNi40NjcgMjMuMzM0YTYuODY3IDYuODY3IDAgMSAwIDAtMTMuNzM0IDYuODY3IDYuODY3IDAgMCAwIDAgMTMuNzM0eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
-        </Link>
+        <img onClick = {onClickSerachBtn} alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxnIHN0cm9rZT0iIzVGMDA4MCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Im0yNi4wODEgMjYuMDgxLTQuMTItNC4xMk0xNi40NjcgMjMuMzM0YTYuODY3IDYuODY3IDAgMSAwIDAtMTMuNzM0IDYuODY3IDYuODY3IDAgMCAwIDAgMTMuNzM0eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
       </div>
       <div class="service">
         <img alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTM2IDM2SDBWMGgzNnoiLz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjcgNikiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjciPgogICAgICAgICAgICA8cGF0aCBkPSJNOS4zMDYgMjRTMCAxNi41NDQgMCA5LjMwNmE5LjMwNiA5LjMwNiAwIDAgMSAxOC42MTIgMEMxOC42MTIgMTYuNTQ0IDkuMzA2IDI0IDkuMzA2IDI0eiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgY3g9IjkuMjEyIiBjeT0iOS4xMjMiIHI9IjIuNzg0Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"></img>
@@ -64,7 +123,7 @@ function Nav(){
         </li>
       </ul>
       <div class="deliver">
-        <a><span class="purple">샛별 · 낮</span>배송안내</a>
+        <a><span>샛별 · 낮</span>배송안내</a>
       </div>
       <div class="header_shadow"/>
     </div>

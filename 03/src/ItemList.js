@@ -1,6 +1,6 @@
 import './ItemList.css';
 import dummy from "./Data.json";
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData, useLocation } from 'react-router-dom';
 function List(props){
     return<>
         <div class="il">
@@ -89,9 +89,11 @@ function Tag(props){
   </>
 }
 function ItemList(){
+    const {state} = useLocation();
+
     return(
         <>
-            <List search="다이어트"/>
+            <List search={state}/>
         </>
     );
 }

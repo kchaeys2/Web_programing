@@ -66,29 +66,7 @@ function Cover(){
                 </div>
                 <div class="order">
                     <Amount/>
-                    <div class="finPrice">
-                        <div class="originPrice">
-                            <span class="coin">총 상품금액:</span><span class="salePrice">15,180</span><span class="won">원</span>
-                        </div>
-                        <div class="saving">
-                            <span class="yellow">적립</span><span class="text">로그인 후, 적립 혜택 제공</span>
-                        </div>
-                        <div class="p03">
-                            <button class="p031">
-                                <span>
-                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS44MDcgNy44NjNhNS43NzcgNS43NzcgMCAwIDAtOC4xNzIgMEwxNiA5LjQ5N2wtMS42MzUtMS42MzRhNS43NzkgNS43NzkgMCAxIDAtOC4xNzMgOC4xNzJsMS42MzQgMS42MzQgNy40NjYgNy40NjdhMSAxIDAgMCAwIDEuNDE1IDBzMCAwIDAgMGw3LjQ2Ni03LjQ2N2gwbDEuNjM0LTEuNjM0YTUuNzc3IDUuNzc3IDAgMCAwIDAtOC4xNzJ6IiBzdHJva2U9IiM1RjAwODAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"/>
-                                </span>
-                            </button>
-                            <button class="p032">
-                                <span>
-                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIHN0cm9rZT0iI0NDQyIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTEyLjY2NiAyM2EzLjMzMyAzLjMzMyAwIDEgMCA2LjY2NiAwIi8+CiAgICAgICAgPHBhdGggZD0iTTI1Ljk5OCAyMi43MzhINmwuMDEzLS4wM2MuMDc2LS4xMzUuNDcxLS43MDQgMS4xODYtMS43MDlsLjc1LTEuMDV2LTYuNjM1YzAtNC40ODUgMy40MzgtOC4xNCA3Ljc0MS04LjMwOEwxNiA1YzQuNDQ2IDAgOC4wNSAzLjcyMiA4LjA1IDguMzE0djYuNjM0bDEuNzA3IDIuNDExYy4xNzMuMjUzLjI1NC4zOC4yNDIuMzh6IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
-                                </span>
-                            </button>
-                            <div>
-                                <button class="p033"><span>장바구니</span></button>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="button">
 
                     </div>
@@ -323,6 +301,7 @@ function Cover(){
 }
 function Amount(){
     const[amount,setAmount] = useState(1);
+    const[price,setPrice] = useState(15180);
 
     const handleAmoutPlus = () =>{
         setAmount(amount+1)
@@ -332,16 +311,51 @@ function Amount(){
             setAmount(amount-1)
         }
     }
-    return(<div class="num"> 
-    <dl>
-        <dt>구매수량</dt>
-        <div class="button">
-            <button id="left" onClick={handleAmoutSub}></button>
-            <div>{amount}</div>
-            <button id="right" onClick={handleAmoutPlus}></button>
+    const handlePriceUp = () => {
+        setPrice(price+15180)
+    }
+    const handlePriceDown = () => {
+        if (parseInt(amount) > 1) {
+        setPrice(price-15180)
+        }
+    }
+    return(
+    <>
+    <div class="num"> 
+        <dl>
+            <dt>구매수량</dt>
+            <div class="button">
+                <button id="left" onClick={()=>{handleAmoutSub(); handlePriceDown()}}></button>
+                <div>{amount}</div>
+                <button id="right" onClick={()=>{handleAmoutPlus(); handlePriceUp()}}></button>
+            </div>
+        </dl>
+    </div>
+        <div class="finPrice">
+        <div class="originPrice">
+            <span class="coin">총 상품금액:</span><span class="salePrice">{price}</span><span class="won">원</span>
         </div>
-    </dl>
-</div>);
+        <div class="saving">
+            <span class="yellow">적립</span><span class="text">로그인 후, 적립 혜택 제공</span>
+        </div>
+        <div class="p03">
+            <button class="p031">
+                <span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS44MDcgNy44NjNhNS43NzcgNS43NzcgMCAwIDAtOC4xNzIgMEwxNiA5LjQ5N2wtMS42MzUtMS42MzRhNS43NzkgNS43NzkgMCAxIDAtOC4xNzMgOC4xNzJsMS42MzQgMS42MzQgNy40NjYgNy40NjdhMSAxIDAgMCAwIDEuNDE1IDBzMCAwIDAgMGw3LjQ2Ni03LjQ2N2gwbDEuNjM0LTEuNjM0YTUuNzc3IDUuNzc3IDAgMCAwIDAtOC4xNzJ6IiBzdHJva2U9IiM1RjAwODAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"/>
+                </span>
+            </button>
+            <button class="p032">
+                <span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIHN0cm9rZT0iI0NDQyIgc3Ryb2tlLXdpZHRoPSIxLjYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTEyLjY2NiAyM2EzLjMzMyAzLjMzMyAwIDEgMCA2LjY2NiAwIi8+CiAgICAgICAgPHBhdGggZD0iTTI1Ljk5OCAyMi43MzhINmwuMDEzLS4wM2MuMDc2LS4xMzUuNDcxLS43MDQgMS4xODYtMS43MDlsLjc1LTEuMDV2LTYuNjM1YzAtNC40ODUgMy40MzgtOC4xNCA3Ljc0MS04LjMwOEwxNiA1YzQuNDQ2IDAgOC4wNSAzLjcyMiA4LjA1IDguMzE0djYuNjM0bDEuNzA3IDIuNDExYy4xNzMuMjUzLjI1NC4zOC4yNDIuMzh6IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDwvZz4KPC9zdmc+Cg=="/>
+                </span>
+            </button>
+            <div>
+                <button class="p033"><span>장바구니</span></button>
+            </div>
+        </div>
+    </div>
+</>
+);
 }
 function Goods09(){
     return<>
